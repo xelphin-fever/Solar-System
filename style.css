@@ -1,0 +1,191 @@
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: #161733;
+    display:flex;
+    flex-direction: row;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/*TITLE*/
+#div-title{
+    box-sizing: border-box;
+    height:130px;
+    left:130px;
+    width:100vh;
+    padding:0 25px;
+    color:rgba(255, 255, 255, 0.466);
+    position:absolute;
+    transform-origin: top left;
+    transform: rotate(90deg);
+       
+}
+h1{
+    letter-spacing: 10px; 
+    font-size: 60px;
+    z-index: 20;
+}
+h1:hover{
+    color:rgba(255, 255, 255, 0.89);
+}
+
+/*SOLAR SYSTEM*/
+#solar-system{
+    position:relative;
+    width:100vw;
+    height:100vh;
+    border-color:white;
+    border-radius:5px;
+    z-index:0;
+}
+
+/*SUN*/
+.star{
+    position:absolute;
+    top:50%;
+    right:50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    animation: pulse 5s linear infinite;
+}
+@keyframes pulse {
+    0%{
+        transform:scale(1.10);
+    }
+    50% {
+        transform:scale(0.85);
+    }
+    100%{
+        transform:scale(1.10);
+    }
+}
+
+/*PLANETS*/
+.planet-div{
+    position:absolute;
+    display:inline-block;
+    top:50%;
+    right:50%;
+    transform-origin: top right;
+    /*default*/
+    width:100px;
+    height:100px;    
+}
+.animate-turn{
+    animation-name:turn;
+    animation-duration: 30s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+}
+@keyframes turn {
+    from{
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(359deg);
+    }
+}
+.planet{
+    width: 45px;
+    animation: spin 12s linear infinite;
+    position:absolute;
+    left:0;
+    bottom:0;
+}
+.planet:hover{
+    animation: planet-hover 0.4s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spin { 
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+@keyframes planet-hover { 
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.min-solar{
+    animation: min-solar 1s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes min-solar {
+    from {
+        transfrom:scale(1);
+    }
+    to {
+        transform:scale(0.8) translate(-25vw, 12vh);
+    }
+}
+
+.max-solar{
+    animation: max-solar 1s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes max-solar {
+    from {
+        transform:scale(0.8) translate(-25vw, 12vh);
+    }
+    to {
+        transfrom:scale(1);
+    }
+}
+
+
+
+
+/*CARD*/
+#div-card{
+    position:absolute;
+    color:rgba(255, 255, 255, 0.466);
+    border: 2px solid rgba(255, 255, 255, 0.466);
+    left:55vw;
+    min-width:470px;
+    width:23vw;
+    top:80px;
+    display:flex;
+    flex-direction: column;
+    padding: 30px 40px;
+}
+#div-card-top{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#div-card-planet{
+    padding:20px 20px 0 0;
+}
+#div-card-general{
+    margin-top:-20px;
+}
+
+
+.card-planet{
+    width: 10vw;
+}
+.card-title{
+    font-size: 60px;   
+}
+.card-general{
+    margin:2px;
+    font-size:15px;
+}
+
+span:hover, .turn-white:hover{
+    color:white;
+}
+

@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="div-title">
+        <h1>THE SOLAR SYSTEM</h1>
+    </div>
+    <div id="solar-system" class="">
+        <img src="./images/sun.png" alt="sun" class="star" data-order="1" style="width:200px;">
+        
+        <div class="planet-div animate-turn"  data-order="2">
+            <img src="./images/mercury.png" alt="mercury" class="planet" data-order="2">
+        </div>
+        
+        <div class="planet-div animate-turn"  data-order="3">
+            <img src="./images/venus.png" alt="venus" class="planet" data-order="3">
+        </div>
+        
+        <div class="planet-div animate-turn"  data-order="4">
+            <img src="./images/earth.png" alt="earth" class="planet" data-order="4">
+        </div>
+        
+        <div class="planet-div animate-turn" data-order="5">
+            <img src="./images/mars.png" alt="mars" class="planet" data-order="5">
+        </div>
+        
+        <div class="planet-div animate-turn" data-order="6">
+            <img src="./images/jupiter.png" alt="jupiter" class="planet" data-order="6">
+        </div>
+        
+        <div class="planet-div animate-turn"  data-order="7">
+            <img src="./images/saturn.png" alt="saturn" class="planet" data-order="7">
+        </div>
+        
+        <div class="planet-div animate-turn" data-order="8">
+            <img src="./images/uranus.png" alt="uranus" class="planet" data-order="8">
+        </div>
+        
+        <div class="planet-div animate-turn" data-order="9">
+            <img src="./images/neptune.png" alt="neptune" class="planet" data-order="9" >
+        </div>
+    </div>
+
+    <div id="div-card" class="" style="visibility:hidden;">
+        <div id="div-card-top">
+            <div id="div-card-planet">
+                <img id="card-planet" src="./images/uranus.png" alt="uranus" class="card-planet">
+            </div>
+            <div id="div-card-title-general">
+                <div id="div-card-title">
+                    <h2><span class="card-title card-general-span turn-white" data-general="title">Uranus</span></h2>
+                </div>
+                <div id="div-card-general">
+                    <h3 class="card-general turn-white">Planet From The Sun: <span class="card-general-span" data-general="from">0</span></h3>
+                    <h3 class="card-general turn-white">Distance from Sun: <span class="card-general-span" data-general="distance">0</span></h3>
+                    <h3 class="card-general turn-white">Orbital Period: <span class="card-general-span" data-general="orbit">0</span></h3>
+                    <h3 class="card-general turn-white">Radius: <span class="card-general-span" data-general="radius">0</span></h3>
+                    <h3 class="card-general turn-white">Length of Day: <span class="card-general-span" data-general="day">0</span></h3>
+                    <h3 class="card-general turn-white">Surface Gravity: <span class="card-general-span" data-general="gravity">0</span></h3>
+                </div>
+            </div>
+        </div>
+        <div id="div-card-info">
+            <p><span class="card-info-span card-general-span" data-general="info">Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus, who, according to Greek mythology, was the grandfather of Zeus (Jupiter) and father of Cronus (Saturn). It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System. Uranus is similar in composition to Neptune, and both have bulk chemical compositions which differ from that of the larger gas giants Jupiter and Saturn. For this reason, scientists often classify Uranus and Neptune as "ice giants" to distinguish them from the other gas giants. Uranus's atmosphere is similar to Jupiter's and Saturn's in its primary composition of hydrogen and helium, but it contains more "ices" such as water, ammonia, and methane, along with traces of other hydrocarbons.[16] It has the coldest planetary atmosphere in the Solar System, with a minimum temperature of 49 K (−224 °C; −371 °F), and has a complex, layered cloud structure with water thought to make up the lowest clouds and methane the uppermost layer of clouds.[16] The interior of Uranus is mainly composed of ices and rock.[15] </span></p>
+        </div>
+        <div id="div-card-moon-title">
+            <h3 class="turn-white">Moons: <span class="card-general-span" data-general="moons">0</span></h3>
+        </div>
+        <div id="div-card-moons">
+
+        </div>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
