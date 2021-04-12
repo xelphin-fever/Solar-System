@@ -13,8 +13,7 @@ body{
 #div-title{
     box-sizing: border-box;
     height:130px;
-    left:130px;
-    width:100vh;
+    left:7vw;
     padding:0 25px;
     color:rgba(255, 255, 255, 0.466);
     position:absolute;
