@@ -38,6 +38,7 @@ h1:hover{
     border-color:white;
     border-radius:5px;
     z-index:0;
+    transform: scale(0.95);
 }
 
 /*SUN*/
